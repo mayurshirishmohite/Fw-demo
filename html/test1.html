@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ウィジェットテストページ</title>
+</head>
+<body>
+<script type="text/javascript">
+if (typeof fw_r != "function") {
+function fw_r(e) {
+	if (e.origin === "http://feed.mikle.com" || e.origin === "https://feed.mikle.com") {
+			var datas = e.data.split('|');
+			var iframe = document.getElementsByClassName('fw-iframe');
+			for (var i=0; i<iframe.length; i++) {
+				if (datas[0] == iframe[i].contentDocument.location.href) {
+					iframe[i].style.height = datas[1];
+				}
+			}
+			return;
+        }
+	}
+	if (window.addEventListener) {
+		window.addEventListener("message", fw_r, false);
+	} else if (window.attachEvent) {
+		window.attachEvent("onmessage", fw_r, false);
+	}
+}
+</script>
+
+<table border="1" cellpadding="15">
+	<tr>
+		<td>
+			Width=300px, Height=300px
+		</td>
+		<td>
+			<iframe id="preview" class="fw-iframe" src="/v2?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Ffeed.mikle.com%2Ftest%2Ftest_rss%2F%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A%22300%22%2C%22height%22%3A%22300%22%2C%22height_by_article%22%3A0%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Helvetica%2C%20Arial%2C%20sans-serif%22%2C%22font_size%22%3A%2214%22%2C%22border%22%3A%22on%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22right%22%2C%22text_alignment%22%3A%22right%22%2C%22corner%22%3A%22square%22%2C%22scroll%22%3A%22off%22%2C%22auto_scroll%22%3A%22off%22%2C%22scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%222%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22rnd%22%2C%22title%22%3A%22on%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%2300aabb%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%2300aabb%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_display%22%3A%22both%22%2C%22item_link%22%3A%22on%22%2C%22item_description_length%22%3A%22150%22%2C%22item_description_color%22%3A%22%2300aabb%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%20%25Z%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22full%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22off%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D" width="300px" height="300px" scrolling="no" frameborder="no"></iframe>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Width=300px, Height=1item
+		</td>
+		<td>
+			<iframe id="preview" class="fw-iframe" src="/v2?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Ffeed.mikle.com%2Ftest%2Ftest_rss%2F%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A%22300%22%2C%22height%22%3A0%2C%22height_by_article%22%3A%221%22%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Helvetica%2C%20Arial%2C%20sans-serif%22%2C%22font_size%22%3A%2214%22%2C%22border%22%3A%22on%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22right%22%2C%22text_alignment%22%3A%22right%22%2C%22corner%22%3A%22square%22%2C%22scroll%22%3A%22off%22%2C%22auto_scroll%22%3A%22off%22%2C%22scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%222%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22rnd%22%2C%22title%22%3A%22on%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%2300aabb%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%2300aabb%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_display%22%3A%22both%22%2C%22item_link%22%3A%22on%22%2C%22item_description_length%22%3A%22150%22%2C%22item_description_color%22%3A%22%2300aabb%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%20%25Z%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22full%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22off%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D" width="300px" height="300px" scrolling="no" frameborder="no"></iframe>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

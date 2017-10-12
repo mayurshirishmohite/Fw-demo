@@ -1,0 +1,39 @@
+<html>
+<head>
+<style type="text/css">
+.tabrow {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.tabrow li {
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid #AAA;
+    background: #ECECEC;
+    display: inline-block;
+}
+</style>
+<script type="text/javascript">
+function iframeReload(page) {
+	document.getElementById('iframe').src = '/html/test' + page + '.html';
+	return false;
+}
+</script>
+</head>
+<body>
+<ul class="tabrow">
+	<li><a href="#" onclick="iframeReload(1);">Size of widget</a></li>
+	<li><a href="#" onclick="iframeReload(2);">Scroll</a></li>
+	<li><a href="#" onclick="iframeReload(3);">Style</a></li>
+	<li><a href="#" onclick="iframeReload(4);">Other General settings</a></li>
+	<li><a href="#" onclick="iframeReload(5);">Title settings</a></li>
+	<li><a href="#" onclick="iframeReload(6);">Content settings</a></li>
+	<li><a href="#" onclick="iframeReload(7);">New features</a></li>
+</ul>
+<iframe id="iframe" src="" width="100%" height="100%">
+</iframe>
+</body>
+</html>
