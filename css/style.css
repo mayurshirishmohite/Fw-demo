@@ -1881,7 +1881,7 @@ h1.pageTitle {
 .backgroundImageV3 {
     background-image: url(../images/top-header-background-v3.jpg);
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 .blueBg .wrapper1300px h1 {
     font-size: 56px;
     font-family: 'Roboto', sans-serif;
@@ -3593,6 +3593,37 @@ input#branding.notPro + label {
     max-height: 100%;
     width: auto;
     display: inline-block;
+}
+.fw-select-builder-container {}
+.fw-select-builder-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #585e63;
+    font-family: 'Roboto', sans-serif;
+}
+.fw-select-builder-container ul li {
+    display: inline-block;
+}
+.fw-select-builder-container ul li a {
+    color: #9ba1a7;
+    border-bottom: 2px solid #fff;
+    padding: 5px 0;
+    text-decoration: none;
+    font-weight: 400;
+}
+.fw-select-builder-container ul li.fw-builder-links {
+    padding: 0 15px;
+}
+.fw-select-builder-container ul li.fw-builder-links a.active,
+.fw-select-builder-container ul li.fw-builder-links a:hover {
+    color: #2f80e3;
+    border-bottom: 2px solid #2f80e3;
+}
+.fw-select-builder-container ul li.builder-label {
+    padding: 0 25px 0 0;
 }
 @media screen and (max-width:768px) {
     .fw-opt-hero-banner h1.hero-title {
