@@ -1,7 +1,7 @@
 /* CSS Document */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     background-color: #fff;
     height: 100%;
@@ -3624,6 +3624,19 @@ input#branding.notPro + label {
 }
 .fw-select-builder-container ul li.builder-label {
     padding: 0 25px 0 0;
+}
+.fw-section-container {
+    padding: 40px 0;
+}
+.fw-section-title {
+    font-size: 34px;
+    color: #2f80e3;
+    font-weight: 300;
+}
+.fw-section-sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px
 }
 @media screen and (max-width:768px) {
     .fw-opt-hero-banner h1.hero-title {
