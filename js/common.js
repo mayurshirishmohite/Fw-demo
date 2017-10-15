@@ -1,6 +1,7 @@
 // Step Wizard hero banner scripts
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+
+    $('.fw-hero-banner-slider').owlCarousel({
         loop: true,
         dots: false,
         nav: true,
@@ -24,7 +25,13 @@ $(document).ready(function () {
         }
     }
 
+    $(".fw-features-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
 
+    });
 });
 
 function openSignupModal() {

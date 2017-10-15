@@ -3638,6 +3638,9 @@ input#branding.notPro + label {
     font-weight: 400;
     line-height: 28px
 }
+.fw-features-content {
+    padding: 75px 0 0 0;
+}
 .fw-features-content .fw-features-content-data h4 {
     color: #2f80e3;
     font-size: 18px;
