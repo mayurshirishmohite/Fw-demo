@@ -25,11 +25,14 @@ $(document).ready(function () {
         }
     }
 
-    $(".fw-features-carousel").owlCarousel({
+    $('.my-flipster').flipster({
+        style: 'flat',
+        spacing: -0.25,
+        start: 'center',
         loop: true,
-        margin: 10,
+        itemSelector: 'li',
+        scrollwheel: false,
         nav: true,
-        items: 1,
 
     });
 });
