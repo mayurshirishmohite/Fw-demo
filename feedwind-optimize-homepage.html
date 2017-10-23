@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="https://feed.mikle.com/css/jquery.onoff.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="css/jquery.flipster.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
 
     <!-- Default Theme -->
@@ -31,8 +30,10 @@
     <script type="text/javascript" src="https://feed.mikle.com/js/bootstrap-colorpicker.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
     <!-- Include js plugin -->
-    <script src="js/jquery.flipster.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="js/cascade-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+
     <script type="text/javascript" src="js/common.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -1677,17 +1678,26 @@ Create podcast widget <i class='fa fa-external-link'></i></a></div>" data-origin
             <h1 class="fw-section-title text-center">Versatile and feature-rich </h1>
             <h3 class="text-center fw-section-sub-title">Create an RSS, Facebook or Google Calendar widget each offering a broad<br/> range of styling possibilities and unique setup options.</h3>
 
-            <div class="my-flipster">
-                <ul>
 
-                    <li><img src="images/google-calendar-widget-example.png" /></li>
-                    <li><img src="images/rss-widget.png" /></li>
+            <div class="cascade-slider_container clearfix" id="feature-slider">
+                <div class="cascade-slider_slides">
+                    <div class="cascade-slider_item">
+                        <img id="gcal-slider" src="images/google-calendar-widget-example.png" class="left"></div>
 
-                    <li><img src="images/facebook-widget.png" /></li>
+                    <div class="cascade-slider_item">
+                        <img id="rss-slider" src="images/rss-widget.png" class="center"></div>
+                    <div class="cascade-slider_item">
+                        <img id="fb-slider" src="images/facebook-widget.png" class="right">
+                    </div>
+                </div>
+                <ol class="cascade-slider_nav">
+                    <li class="cascade-slider_dot "></li>
+                    <li class="cascade-slider_dot cur"></li>
+                    <li class="cascade-slider_dot"></li>
 
-
-                </ul>
+                </ol>
             </div>
+
 
 
             <div class="fw-features-content">
