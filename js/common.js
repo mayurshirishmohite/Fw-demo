@@ -24,7 +24,18 @@ $(document).ready(function () {
             $('.fw-steps').html(steps);
         }
     }
+    $('.cascade-slider_nav li').click(function (e) {
+        e.preventDefault();
+    })
 
     $('#feature-slider').cascadeSlider({});
+
+    // Manually added on thumbnail click to rotate
+    $('.cascade-slider_slides .cascade-slider_item').click(function () {
+        var cascadeSlideNav = $(this).attr('data-nav');
+        //console.log(cascadeSlideNav);
+        $("#" + cascadeSlideNav).click();
+    });
+
 
 });
