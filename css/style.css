@@ -3719,13 +3719,13 @@ div#feature-slider {
     text-transform: uppercase;
     font-size: 20px;
 }
-#feature-slider #rss-slider h3 {
+#feature-slider [data-nav="rss-slider"] h3 {
     color: #ffa500;
 }
-#feature-slider #gcal-slider h3 {
+#feature-slider [data-nav="gcal-slider"] h3 {
     color: #4484f0;
 }
-#feature-slider #fb-slider h3 {
+#feature-slider [data-nav="fb-slider"] h3 {
     color: #3b5998;
 }
 .cascade-slider_item:after {
