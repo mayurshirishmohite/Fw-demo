@@ -3750,6 +3750,20 @@ div#feature-slider {
 .fw-feature-items .fw-feature-item {
     padding-bottom: 70px;
 }
+.fw-feature-items .fw-feature-item.default-item {
+    display: block;
+}
+.fw-feature-items .fw-feature-item.rss-item,
+.fw-feature-items .fw-feature-item.gcal-item,
+.fw-feature-items .fw-feature-item.fb-item {
+    display: none;
+}
+.fw-feature-items .fw-feature-item.rss-item.active,
+.fw-feature-items .fw-feature-item.gcal-item.active,
+.fw-feature-items .fw-feature-item.fb-item.active,
+.fw-feature-items .fw-feature-item.rss-fb-item.active {
+    display: block;
+}
 @media screen and (max-width:768px) {
     .cascade-slider_item.next {
         left: 85%;
