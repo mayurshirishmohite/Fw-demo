@@ -3636,10 +3636,7 @@ filter: blur(5px);*/
 .fw-section-sub-title {
     font-size: 20px;
     font-weight: 400;
-    line-height: 28px
-}
-.fw-features-content {
-    padding: 75px 0 0 0;
+    line-height: 36px;
 }
 .fw-features-content .fw-features-content-data h4 {
     color: #2f80e3;
@@ -3768,10 +3765,109 @@ div#feature-slider {
     display: block;
 }
 
+/******** HELPER CLASSES ************/
+
+.fw-sections-items {
+    padding-top: 80px;
+}
+.defaultBlueBgBtn {
+    background: #2f80e3;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    margin: 3px 0 0px 0;
+    text-decoration: none;
+    /* transition: all 0.5s ease; */
+    border: 1px solid #2f80e3;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+a.defaultBlueBgBtn:hover,
+.defaultBlueBgBtn:hover {
+    background: #2070d1;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #2070d1;
+}
+
 /*********** PLANS ***************/
 
 .fw-hm-plans-bg {
     background-color: #eff0f1;
+}
+.fw-plans-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 30px 0px;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.fw-plans-item:hover {
+    box-shadow: 1px 1px 10px #2f80e3;
+}
+.fw-plans-item h2 {
+    text-align: center;
+    color: #2f80e3;
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+.fw-plans-item .fw-plan-item-price {
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    color: #2f80e3;
+    margin: 10px 0;
+}
+.fw-plans-item .fw-plan-item-price sup {
+    padding: 0 3px;
+    font-size: 16px;
+}
+.fw-plans-item .fw-plan-item-price span {
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    color: #6e7479;
+}
+.fw-plans-item .fw-plan-item-price-text {
+    text-align: center;
+}
+.fw-plan-item-divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: #eff1f2;
+    margin: 30px 0;
+}
+.fw-plans-item ul.fw-plan-item-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+.fw-plans-item ul.fw-plan-item-features li {
+    padding: 7px 0;
+}
+.fw-plans-items .fw-plans-item {
+    margin-bottom: 20px;
+}
+.fw-plans-items .row .col-lg-3.col-md-3.col-sm-6:last-child .fw-plans-item {
+    margin-bottom: 0px;
+}
+@media screen and (min-width:1000px) {
+    .fw-plans-items .fw-plans-item {
+        margin-bottom: 0px;
+    }
 }
 @media screen and (max-width:768px) {
     .cascade-slider_item.next {
