@@ -3627,6 +3627,7 @@ filter: blur(5px);*/
 }
 .fw-section-container {
     padding: 80px 0;
+    position: relative;
 }
 .fw-section-title {
     font-size: 34px;
@@ -3902,6 +3903,80 @@ a.defaultBlueBgBtn:hover,
     display: inline-block;
     vertical-align: middle;
 }
+
+/********* TESTIMONIAL Section **************/
+
+.owl-carousel.testimonial-slider .owl-item img {
+    width: auto;
+}
+.owl-carousel.testimonial-slider .item .fw-double-quote {
+    padding: 20px 0;
+}
+.owl-carousel.testimonial-slider .item p {
+    color: #6e7479;
+    font-size: 20px;
+    line-height: 36px;
+}
+.fw-testimonial-divider-line {
+    position: absolute;
+    top: 20%;
+    width: 1px;
+    left: 50%;
+    background: #d8d9da;
+    height: 40%;
+}
+.cascade-slider_dot.cur {
+    background: #2f80e3;
+    border: 3px solid #dadbdc;
+}
+.cascade-slider_dot {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 0.5em;
+    background: #dadbdc;
+    list-style: none;
+    cursor: pointer;
+}
+.fw-testimonial-client-info {
+    /* line-height: 50px; */
+    margin-top: 20px;
+    color: #7a8088;
+    font-weight: 400;
+    font-size: 14px;
+}
+.fw-testimonial-client-info .testimonial-users-text {
+    padding-top: 14px;
+    font-weight: 500;
+    color: #939aa0;
+    text-transform: capitalize;
+}
+.fw-testimonial-client-info .testimonial-users-text strong {
+    color: #2f80e3;
+}
+.fw-testimonial-client-info div:first-child {
+    padding-right: 10px;
+    float: left;
+}
+.owl-carousel.testimonial-slider .owl-nav.disabled + .owl-dots {
+    margin-top: 80px;
+}
+.owl-carousel.testimonial-slider .owl-dots .owl-dot span {
+    width: 1em;
+    height: 1em;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+.owl-carousel.testimonial-slider .owl-dot.active span,
+.owl-carousel.testimonial-slider .owl-dot:hover span {
+    background: #2f80e3;
+    border: 3px solid #dadbdc;
+}
 @media screen and (min-width:1000px) {
     .fw-plans-items .fw-plans-item {
         margin-bottom: 0px;
@@ -3944,6 +4019,17 @@ a.defaultBlueBgBtn:hover,
     }
     .cascade-slider_item.prev {
         left: -15%;
+    }
+}
+@media screen and (max-width:610px) {
+    .fw-testimonial-divider-line {
+        display: none;
+    }
+    .owl-carousel.testimonial-slider .item .fw-double-quote {
+        text-align: center;
+    }
+    .owl-carousel.testimonial-slider .owl-item img {
+        display: inline-block;
     }
 }
 @media screen and (max-width:570px) {

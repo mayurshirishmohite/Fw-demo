@@ -17,6 +17,27 @@ $(document).ready(function () {
         onTranslated: steps,
     });
 
+    // Testimonial carousel 
+    $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 150,
+        autoHeight: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+
     function steps(event) {
         if ($('.owl-item.active .item').length) {
             var steps = $('.owl-item.active .item').attr('id').match(/\d+$/);
