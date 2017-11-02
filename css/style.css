@@ -3865,12 +3865,6 @@ a.defaultBlueBgBtn:hover,
 .fw-plans-items .row .col-lg-3.col-md-3.col-sm-6:last-child .fw-plans-item {
     margin-bottom: 0px;
 }
-.fw-plans-items p.fw-plan-bottom-text {
-    font-size: 14px;
-    width: 640px;
-    margin: 0 auto;
-    padding: 80px 0 0 0;
-}
 
 /**** LOGO SECTION ********/
 
@@ -4008,9 +4002,6 @@ a.defaultBlueBgBtn:hover,
     .fw-feature-items .fw-feature-item,
     .fw-features-content .fw-feature-items:last-child .fw-feature-item {
         padding-bottom: 30px;
-    }
-    .fw-plans-items p.fw-plan-bottom-text {
-        width: 95%;
     }
 }
 @media screen and (max-width:678px) {
