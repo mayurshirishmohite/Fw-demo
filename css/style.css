@@ -3978,6 +3978,12 @@ a.defaultBlueBgBtn:hover,
     }
 }
 @media screen and (max-width:768px) {
+    .fw-section-container {
+        padding: 40px 0;
+    }
+    .owl-carousel.testimonial-slider .owl-nav.disabled + .owl-dots {
+        margin-top: 20px;
+    }
     .cascade-slider_item.next {
         left: 85%;
     }
@@ -4003,6 +4009,9 @@ a.defaultBlueBgBtn:hover,
     .fw-feature-items .fw-feature-item,
     .fw-features-content .fw-feature-items:last-child .fw-feature-item {
         padding-bottom: 30px;
+    }
+    .fw-sections-items {
+        padding-top: 40px;
     }
 }
 @media screen and (max-width:678px) {
@@ -4037,6 +4046,12 @@ a.defaultBlueBgBtn:hover,
 @media screen and (max-width:420px) {
     .cascade-slider_item.now {
         transform: translateY(-50%) translateX(-50%) scale(0.8);
+    }
+    .cascade-slider_nav {
+        bottom: -80px;
+    }
+    div#feature-slider {
+        margin: 75px 0 55px 0;
     }
 }
 
