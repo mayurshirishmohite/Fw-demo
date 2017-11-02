@@ -3632,6 +3632,7 @@ filter: blur(5px);*/
 .fw-section-title {
     font-size: 34px;
     color: #2f80e3;
+    margin: 0;
     font-weight: 300;
 }
 .fw-section-sub-title {
