@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FeedWind Pro | FeedWind</title>
 <meta name="description" content="FeedWind Pro" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
 <link rel="alternate" type="application/rss+xml" title="RSS Feed for feed.mikle.com/support/"  href="https://feed.mikle.com/support/feed/" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 <link rel="alternate" type="application/rss+xml" title="RSS Feed for feed.mikle.com/support/"  href="http://feed.mikle.com/support/feed/" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 <script src="https://use.fontawesome.com/9be66cb674.js"></script>
@@ -60,77 +60,229 @@
   <!-- Some Of Features -->
   <section class="heading wrapper text-center">
     <div class="paddingWrapper" style="padding-bottom:0px;padding-top: 40px;">
-      <h1>FeedWind Pro</h1>
-      <hr/>
-      <p class="subtitle"> We provide FeedWind Pro for customers who are unable, or do not wish to display the FeedWind branding link on their website.
-        After purchasing a subscription to FeedWind Pro, the link to FeedWind may be removed. </p>
+      <h1>Compare Plans Features</h1>
+      <hr>
     </div>
   </section>
-  <section class="wrapper positionRelative">
+  <!-- Some Of Features ends--> 
+  <section class="container positionRelative">
     <div class="paddingWrapper" style="padding-top:0px;">
-      <h3 class="text-center">Choose Your Plan</h3>
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
+		<h3 class="text-center">Find your perfect match!</h3>
+		<div class="fw-plans-switcher">
+			<div class="btn-group btn-group-lg" role="group" aria-label="Default button group"> 
+				<a  id="yearly-plan"  value="year" class="btn btn-default default-active">Yearly</a> 
+				<a  id="monthly-plan" value="month" class="btn btn-default">Monthly</a> 
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-------------------------- YEARLY PLAN -------------------- -->
+	<div id="fw-yearly">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="fw-plans fw-free-plan">
             <h3>Free</h3>
-            <hr/>
+            <hr>
             <div class="fw-plan-price">$0</div>
-            <hr/>
-            <p> Search Filtering<br/>
-              Custom CSS<br/>
-              Save up to 5 Widgets<br/>
-              <strong>Display up to 5 Widgets</strong><br/>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br><br>
+              <strong>Save up to 5 Widgets</strong><br>
+              <strong>Display up to 5 Feeds</strong><br>
             </p>
-            <hr/>
-            <div style="text-align:center;padding-bottom:40px;"> <a href="#" data-toggle="modal" data-target=".signup-modal" class="greenRoundedBtn">Create widget</a> </div>
+            <hr>
+            <div style="text-align:center;padding-bottom:40px;"> 
+                
+                    
+                    <div class="fw-your-plan" style="margin-bottom:-14px;">Your Plan</div>
+                    
+                
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="fw-plans fw-blue-box-shadow">
+            <h3>Lite</h3>
+            <hr>
+            <div class="fw-plan-price">$<span>3.99</span> <sup>per month</sup></div>
+            <div>Billed Annually</div>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 5 Widgets</strong><br>
+              <strong>Display up to 5 Feeds</strong> <br>
+             
+            </p>
+            <hr>
+            <div style="text-align:center;padding-bottom:20px;"> 
+              
+                  
+                  <a href="javascript:prosubscribe('lite')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="fw-plans fw-blue-box-shadow">
             <h3>Pro</h3>
-            <hr/>
-            <div class="fw-plan-price">$89 <sup>per year</sup></div>
+            <hr>
+            <div class="fw-plan-price">$7.99 <sup>per month</sup></div>
             <div>Billed Annually</div>
-            <hr/>
-            <p> Search Filtering<br/>
-              Custom CSS<br/>
-              <br/>
-              <strong>Remove "Powered by FeedWind"</strong><br/>
-              <strong>Save up to 20 Widgets</strong><br/>
-              <strong>Display up to 20 Widgets</strong> </p>
-            <hr/>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 20 Widgets</strong><br>
+              <strong>Display up to 20 Feeds</strong> <br>
+             
+            </p>
+            <hr>
             <div style="text-align:center;padding-bottom:20px;"> 
-              <!--<a href="https://feed.mikle.com/prosubscribe/" class="greenRoundedBtn">Subscribe</a>--> 
               
-              <a href="#" data-toggle="modal" data-target=".signup-modal" class="greenRoundedBtn">14-day free trial </a> </div>
-            <p>If you unsubscribe within the 14-day trial period you will not be charged*</p>
+                  
+                  <a href="javascript:prosubscribe('pro')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
           </div>
         </div>
-		<div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="fw-plans fw-blue-box-shadow">
             <h3>Plus</h3>
-            <hr/>
-            <div class="fw-plan-price">$89 <sup>per year</sup></div>
+            <hr>
+            <div class="fw-plan-price">$14.99 <sup>per month</sup></div>
             <div>Billed Annually</div>
-            <hr/>
-            <p> Search Filtering<br/>
-              Custom CSS<br/>
-              <br/>
-              <strong>Remove "Powered by FeedWind"</strong><br/>
-              <strong>Save up to 20 Widgets</strong><br/>
-              <strong>Display up to 20 Widgets</strong> </p>
-            <hr/>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 100 Widgets</strong><br>
+              <strong>Display up to 20 Feeds</strong> <br>
+             
+            </p>
+            <hr>
             <div style="text-align:center;padding-bottom:20px;"> 
-              <!--<a href="https://feed.mikle.com/prosubscribe/" class="greenRoundedBtn">Subscribe</a>--> 
               
-              <a href="#" data-toggle="modal" data-target=".signup-modal" class="greenRoundedBtn">14-day free trial </a> </div>
-            <p>If you unsubscribe within the 14-day trial period you will not be charged*</p>
+                  
+                  <a href="javascript:prosubscribe('plus')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
+            <!-- <p class="fw-dark-text">If you unsubscribe within the 14-day trial period you will not be charged*</p>-->
           </div>
         </div>
-      </div>
-      <p class="text-center" style="padding:40px 20px 0 20px"> *The FeedWind Pro Trial is free for 14 days. You will be required to enter payment information which we will hold securely on file until the trial period is over. Unless you decide to unsubscribe before the 14 days is over, we will automatically charge the annual Pro plan fee at the end of the trial period. <br/>
-        <br/>
-        If you do decide to unsubscribe for whatever reason, we will erase your payment details and revert your account back to the Free plan (or remove it if you prefer). </p>
+      </div></div><!-- Yearly ends here -->
+	  
+	  
+	  <!-------------------------- MONTHLY PLAN -------------------- -->
+	  <div id="fw-monthly">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="fw-plans fw-free-plan">
+            <h3>Free</h3>
+            <hr>
+            <div class="fw-plan-price">$0</div>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br><br>
+              <strong>Save up to 5 Widgets</strong><br>
+              <strong>Display up to 5 Feeds</strong><br>
+            </p>
+            <hr>
+            <div style="text-align:center;padding-bottom:40px;"> 
+                
+                    
+                    <div class="fw-your-plan" style="margin-bottom:-14px;">Your Plan</div>
+                    
+                
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="fw-plans fw-blue-box-shadow">
+            <h3>Lite</h3>
+            <hr>
+            <div class="fw-plan-price">$<span>4.99</span> <sup>per month</sup></div>
+            <div>Billed Annually</div>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 5 Widgets</strong><br>
+              <strong>Display up to 5 Feeds</strong> <br>
+             
+            </p>
+            <hr>
+            <div style="text-align:center;padding-bottom:20px;"> 
+              
+                  
+                  <a href="javascript:prosubscribe('lite')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="fw-plans fw-blue-box-shadow">
+            <h3>Pro</h3>
+            <hr>
+            <div class="fw-plan-price">$9.99 <sup>per month</sup></div>
+            <div>Billed Annually</div>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 20 Widgets</strong><br>
+              <strong>Display up to 20 Feeds</strong> <br>
+             
+            </p>
+            <hr>
+            <div style="text-align:center;padding-bottom:20px;"> 
+              
+                  
+                  <a href="javascript:prosubscribe('pro')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="fw-plans fw-blue-box-shadow">
+            <h3>Plus</h3>
+            <hr>
+            <div class="fw-plan-price">$17.99 <sup>per month</sup></div>
+            <div>Billed Annually</div>
+            <hr>
+            <p> Search Filtering<br>
+              Custom CSS<br>
+              <br>
+              <strong>Remove "Powered by FeedWind"</strong><br>
+              <strong>Save up to 100 Widgets</strong><br>
+              <strong>Display up to 20 Feeds</strong> <br>
+             
+            </p>
+            <hr>
+            <div style="text-align:center;padding-bottom:20px;"> 
+              
+                  
+                  <a href="javascript:prosubscribe('plus')" class="greenRoundedBtn">Buy now</a>
+                  
+              
+            </div>
+            <!-- <p class="fw-dark-text">If you unsubscribe within the 14-day trial period you will not be charged*</p>-->
+          </div>
+        </div>
+      </div></div><!-- Yearly ends here -->
+	  
     </div>
   </section>
 </div>
