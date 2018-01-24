@@ -14,7 +14,7 @@
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-colorpicker.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.1/css/bootstrap-colorpicker.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Custom Toggle Stylesheet -->
@@ -736,11 +736,16 @@
                         </div>
                       </div>
                       <div class="pushDivRight">
-                        <div class="FeedBackgroundCol headerColorsBox "> <a>
+					  <div  class="FeedBackgroundCol  headerColorsBox  colorpicker-component" data-color="#F18A31" title="Using input value">
+					 
+					 <a> <div class="colorDots input-group-addon"><i></i></div></a>
+					  <input type="text" value="#DD0F20"/>
+					</div>
+                       <!-- <div class="FeedBackgroundCol headerColorsBox "> <a>
                           <div class="colorDots lightBlueBg" ></div>
                           </a>
                           <input type="text" value="#00AABB" class="FeedBackgroundColTxt">
-                        </div>
+                        </div>-->
                       </div>
                     </div>
                   </div>
@@ -1254,7 +1259,8 @@ We will send you an email that will allow you to reset your password. </p>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 <script src="js/jquery.onoff.min.js"></script> 
 <script src="js/rangeslider.js"></script>
-<script src="js/bootstrap-colorpicker.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.0/js/bootstrap-colorpicker.min.js"></script>
+
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>

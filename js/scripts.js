@@ -792,14 +792,13 @@ $("document")
 							});
 
 					$('.FeedBackgroundCol').colorpicker().on(
-							'changeColor.colorpicker',
+							'colorpickerChange.colorpicker',
 							function(event) {
-								$(this).find('.colorDots')
-										.css("background-color",
+								$(this).css("background-color",
 												event.color.toHex());
 
 							});
-
+					  $('#cp4').colorpicker({"color": "#16813D"});
 					$('.firstDot').colorpicker();
 					$('.secondDot').colorpicker();
 					$('.thirdDot').colorpicker();
